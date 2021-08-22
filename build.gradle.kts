@@ -28,6 +28,8 @@ kotlin {
             testTask {
                 useKarma {
                     useChromium()
+                    useFirefox()
+                    useOpera()
                 }
             }
         }
