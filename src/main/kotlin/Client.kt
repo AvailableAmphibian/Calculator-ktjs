@@ -9,6 +9,9 @@ fun main() {
     window.onload = { initButtons() }
 }
 
+/**
+ * Binding buttons to their operations.
+ */
 fun initButtons() {
     document.body?.addEventListener("keydown", { keyPressed(it as KeyboardEvent) })
 
@@ -37,6 +40,9 @@ fun initButtons() {
     document.querySelector(".clean")?.addEventListener("click", { clean() })
 }
 
+/**
+ * Binding keys to their operations.
+ */
 fun keyPressed(keyEvent: KeyboardEvent) {
     when (keyEvent.key) {
         "0" -> addCharToOperations('0')
